@@ -7,6 +7,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\DriverController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\MaintenanceController;
 use App\Http\Controllers\RegisterController;
 
 /*
@@ -93,3 +94,6 @@ Route::get('/prereturncar', [BookingController::class, 'garasi']);
 Route::get('/return/{id}', [BookingController::class, 'return']);
 
 Route::get('/get-driver', [DriverController::class, 'getDriver']);
+Route::get('/maintenance', [MaintenanceController::class, 'index']);
+Route::post('/maintenance', [MaintenanceController::class, 'store']);
+Route::delete('/maintenance/{id}', [MaintenanceController::class, 'destroy']);

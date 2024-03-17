@@ -23,13 +23,14 @@ class CarController extends Controller
     public function tambahmobil(Request $request) {
         
 
-        $path = Storage::putFile('img/cars', $request->file('uploadedimage'));
+        $path = date('YmdHis') . '-image' . '.' . $request->uploadedimage->extension();
+        $request->uploadedimage->move(public_path('images/cars'), $path);
 
         $addcar = new Tbl_mobil;
         $addcar->nama=$request->car_name;
         $addcar->no_polisi=$request->car_nameplate;
         $addcar->tarifhari=$request->car_priceday;
-        $addcar->foto_mobil=$path;
+        $addcar->foto_mobil=url("/images/cars/{$path}");
         $addcar->tbl_akun_id=$request->admin_id;
         $addcar->save();
 
@@ -51,14 +52,16 @@ class CarController extends Controller
             );
         
         if(!is_null($request->file('uploadedimage'))) {
-            $path = Storage::putFile('img/cars', $request->file('uploadedimage'));
+            $path = date('YmdHis') . '-image' . '.' . $request->uploadedimage->extension();
+            $request->uploadedimage->move(public_path('images/cars'), $path);
+
         }
         $addcar = Tbl_mobil::find($request->id);
         $addcar->nama=$request->car_name;
         $addcar->no_polisi=$request->car_nameplate;
         $addcar->tarifhari=$request->car_priceday;
         if(!is_null($request->file('uploadedimage'))) {
-            $addcar->foto_mobil=$path;
+            $addcar->foto_mobil=url("/images/cars/{$path}");
         }
         $addcar->save();
 

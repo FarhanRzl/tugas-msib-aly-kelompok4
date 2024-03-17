@@ -13,16 +13,14 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('tbl_mobils', function (Blueprint $table) {
+        Schema::create('tbl_maintenances', function (Blueprint $table) {
             $table->id();
-            $table->string('nama');
-            $table->string('no_polisi');
-            $table->decimal('tarifhari', $precision = 10, $scale = 0);
-            $table->string('foto_mobil');
+            $table->foreignId('tbl_mobil_id')->constrained('tbl_mobils');
             $table->foreignId('tbl_akun_id')->constrained('tbl_akuns');
-            $table->boolean('is_maintenance')->default(false);
-            $table->timestamp('updated_at')->nullable();
-            $table->timestamp('created_at')->nullable();
+            $table->string('jenis_kerusakan');
+            $table->integer('biaya_perbaikan');
+            $table->timestamps();
+            
         });
     }
 
@@ -33,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tbl_mobils');
+        Schema::dropIfExists('tbl_maintenances');
     }
 };

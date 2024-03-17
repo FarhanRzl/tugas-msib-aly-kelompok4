@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function index() {
         return view('index',[
-            'mobil'=>Tbl_mobil::orderBy('created_at','asc')->get()
+            'mobil'=>Tbl_mobil::where('is_maintenance', false)->orderBy('created_at','asc')->get()
         ]);
     }
 }

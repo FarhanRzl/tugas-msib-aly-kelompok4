@@ -132,69 +132,8 @@
         </div>
         <section class="section blog" id="blog" >
             <div class="container" >
-
                 <h2 class="h2 section-title" style="text-align: center; margin-top:100px">TESTIMONI CUSTOMER</h2>
-
                 <ul class="blog-list has-scrollbar" style="margin-top: 50px;">
-
-                    <li>
-                        <div class="blog-card">
-                            <figure class="card-banner">
-                                <a href="#">
-                                    <img src="{{ asset('../../assets/img/ten hag.jpg') }}" alt="Opening of new offices of the company" loading="lazy"
-                                    class="w-100">
-                                </a>
-                                <a href="#" class="btn card-badge">Tour Guide</a>
-                            </figure>
-
-                            <div class="card-content">
-                                <h3 class="h3 card-title">
-                                    <a href="#">Pelayanan sangat profesional, saya berikan dua jempol untuk HiCar!</a>
-                                </h3>
-
-                                <div class="card-meta">
-                                    <div class="comments">
-                                        <p>- Erik Ten Hag</p>
-                                    </div>
-
-                                    <div class="publish-date">
-                                    <ion-icon name="time-outline"></ion-icon>
-                                    <time datetime="2022-01-14">14 Januari 2023</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="blog-card">
-                            <figure class="card-banner">
-                                <a href="#">
-                                    <img src="{{ asset('../../assets/img/Once-Mekel.jpeg') }}" alt="Opening of new offices of the company" loading="lazy"
-                                    class="w-100">
-                                </a>
-                                <a href="#" class="btn card-badge">Antar Jemput</a>
-                            </figure>
-
-                            <div class="card-content">
-                                <h3 class="h3 card-title">
-                                    <a href="#">Sangat recommended untuk disewa, sopir juga asik, salam tiga jari!</a>
-                                </h3>
-
-                                <div class="card-meta">
-                                    <div class="comments">
-                                        <p>- Once</p>
-                                    </div>
-                                    
-                                    <div class="publish-date">
-                                    <ion-icon name="time-outline"></ion-icon>
-                                    <time datetime="2022-01-14">27 Februari 2023</time>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-
                     <li>
                         <div class="blog-card">
                             <figure class="card-banner">
@@ -204,7 +143,6 @@
                                 </a>
                                 <a href="#" class="btn card-badge">Antar Jemput</a>
                             </figure>
-
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     <a href="#">Sopir sangat ramah, lihai dalam menyetir dan menguasai medan!</a>
@@ -233,17 +171,14 @@
                                 </a>
                                 <a href="#" class="btn card-badge">Sewa Sopir</a>
                             </figure>
-
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     <a href="#">Supir yang dimilki oleh HiCar sangat bagus dalam menyetir!</a>
                                 </h3>
-
                                 <div class="card-meta">
                                     <div class="comments">
                                         <p>- Iwan Fals</p>
                                     </div>
-
                                     <div class="publish-date">
                                     <ion-icon name="time-outline"></ion-icon>
                                     <time datetime="2022-01-14">01 Mei 2023</time>
@@ -262,17 +197,14 @@
                                 </a>
                                 <a href="#" class="btn card-badge">Tour Guide</a>
                             </figure>
-
                             <div class="card-content">
                                 <h3 class="h3 card-title">
                                     <a href="#">Pelayanannya enak banget, sampai tertidur di dalam mobil!</a>
                                 </h3>
-
                                 <div class="card-meta">
                                     <div class="comments">
                                         <p>- Ivan Gunawan</p>
                                     </div>
-
                                     <div class="publish-date">
                                     <ion-icon name="time-outline"></ion-icon>
                                     <time datetime="2022-01-14">30 April 2023</time>
@@ -294,13 +226,11 @@
                     <a href="/index" class="logoText" style="letter-spacing: 3px;">
                         <h1>HiCar</h1>
                     </a>
-            
                     <p class="footer-text">
                         Sebuah solusi Transportasi dalam perjalan Anda, memenuhi berbagai
                         kebutuhan penyewaan Mobil, pelayanan berkualitas dengan harga terjangkau!
                     </p>
                     </div>
-        
                     </ul>    
                     <ul class="footer-list">
                         <li>
@@ -344,11 +274,7 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.788344979992!2d112.78347416474139!3d-7.26491172202844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7f988394da1e3%3A0x6dab5a12fcecbefa!2sFakultas%20Sains%20dan%20Teknologi%20Universitas%20Airlangga!5e0!3m2!1sid!2sid!4v1686242746408!5m2!1sid!2sid" width="280" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </ul>            
                 </div>
-                <div class="footer-bottom" style="margin-top: 50px; text-align: center">
-                    <p class="copyright">
-                        &copy; 2023 <a href="#">Pwebprak</a>. All Rights Reserved
-                    </p> 
-                </div>
+                <div class="footer-bottom" style="margin-top: 50px;"</div>
             </div>
     </footer>
 
